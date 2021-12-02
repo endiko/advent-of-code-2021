@@ -6,4 +6,4 @@ module.exports = (path) => (fs
   .split('\n')
   .map(str => str.replace(/\r$/, ''))
   .filter(str => str.length > 0)
-  .map(item => Number(item)));
+  .map(item => item.split(' ')));
