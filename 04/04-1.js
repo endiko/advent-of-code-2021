@@ -1,4 +1,4 @@
-const { getInputData, getScoreUnused, getSetOfBoards } = require('./utils');
+import { getInputData, getScoreUnused, getSetOfBoards } from './utils/index.js';
 
 const markNumbers = (board, num) => {
   let status = 'not win';

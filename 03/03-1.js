@@ -1,5 +1,4 @@
-const getInputData = require('./getInputData');
-const {getTMatrix} = require('./utils');
+import { getTMatrix, getInputData } from './utils/index.js';
 
 const getPowerOfConsumption = (input) => {
   const matrix = getTMatrix(input)

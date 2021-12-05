@@ -1,21 +1,15 @@
-const getInputData = require('./getInputData');
-const {getTMatrix} = require('./utils');
-
+import { getTMatrix, getInputData } from './utils/index.js';
 
 const createMap = (arr) => {
   const map = {
     '0': [],
     '1': [],
   };
-  // let count1 = 0;
-  // let count0 = 0;
   arr.forEach((val, idx) => {
     if (val === '1') {
       map['1'].push(idx);
-      // count1++;
     } else {
       map['0'].push(idx);
-      // count0++;
     }
   });
 

@@ -1,6 +1,6 @@
-const fs = require('fs');
+import fs from 'fs';
 
-module.exports = (path) => (fs
+export const getInputData = (path) => (fs
   .readFileSync(path)
   .toString()
   .split('\n')

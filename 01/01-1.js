@@ -1,4 +1,4 @@
-const getInputData = require('./getInputData');
+import { getInputData } from './getInputData.js';
 
 const getIncreasesNumber = (input) => {
   let count = 0;

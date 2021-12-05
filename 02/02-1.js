@@ -1,4 +1,4 @@
-const getInputData = require('./getInputData');
+import { getInputData } from './getInputData.js';
 
 const getMultiplyHorizontalPositionAndDepth = (input) => {
   let depth = 0;

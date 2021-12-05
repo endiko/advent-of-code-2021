@@ -1,4 +1,5 @@
-const getInputData = require('./getInputData');
+// const getInputData = require('./getInputData');
+import { getInputData } from './utils/index.js'
 const SIZE = 1000;
 
 const solution = (input, part = 'part 1') => {
@@ -65,7 +66,7 @@ const solution = (input, part = 'part 1') => {
   return map.reduce((prev, curr) => (prev + curr.filter(el => el > 1).length), 0);
 }
 
-// console.log(solution(getInputData('test-input.txt')));
+console.log(solution(getInputData('test-input.txt')));
 console.log(solution(getInputData('input.txt')));
-// console.log(solution(getInputData('test-input.txt'), 'part 2'));
+console.log(solution(getInputData('test-input.txt'), 'part 2'));
 console.log(solution(getInputData('input.txt'), 'part 2'));

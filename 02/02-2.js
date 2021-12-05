@@ -1,5 +1,4 @@
-const getInputData = require('./getInputData');
-const fs = require('fs');
+import { getInputData } from './getInputData.js';
 
 const getMultiplyHorizontalPositionAndDepthWithAim = (input) => {
   let depth = 0;

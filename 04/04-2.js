@@ -1,4 +1,4 @@
-const { getInputData, getScoreUnused, getSetOfBoards } = require('./utils');
+import { getInputData, getScoreUnused, getSetOfBoards } from './utils/index.js';
 
 
 const isBoardWins = (board) => {
@@ -59,7 +59,7 @@ const getGiantSquidWinScore = (input) => {
     boardsMap.push(tempBoard);
   });
 
-  for ({board, number, steps} of boardsMap) {
+  for (let { board, number, steps } of boardsMap) {
     if (steps === maxSteps) {
       return getScoreUnused(board) * Number(number);
     }
